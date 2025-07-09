@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Sa Aking Mahal 💖</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffe6f0;
+            text-align: center;
+            padding: 50px;
+            color: #d63384;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: auto;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #a61e4d;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            display: none;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hi Mahal! 💘</h1>
+    <p>May gusto lang akong sabihin...</p>
+    
+    <button onclick="showLoveNote()">Pindutin mo ako 😘</button>
+
+    <div class="message" id="loveMessage">
+        <p>Ikaw ang pinakamagandang nangyari sa buhay ko. Salamat sa pagmamahal mo, at palagi kang nasa puso ko. 💖</p>
+        <p>Mahal na mahal kita, pasensya na kung palagi tayong nasa ganitong sitwasyon. Ginawa ko naman na maging mapabuti sayo</p>
+        <p>at hindi na magawa muli pa yung mga pagkakamali ko sayo. Pero sa sitwayson natin maya't maya meron akong hindi nagagampanan</p>
+        <p>pero sana malaman mo na ikaw ang dahilan kung bakit ako lumalaban sa lahat ng pagsubok. Ikaw ang aking nais makasama habang buhay.</p>
+        <p>Hindi ko alam kung anong mangyayari sa hinaharap, pero ang alam ko lang ay mahal na mahal kita ngayon at magpakailanman.</p>        
+        <p>— Love, Jellyfish</p>     
+    </div>
+</div>
+
+<script>
+    function showLoveNote() {
+        const messageDiv = document.getElementById('loveMessage');
+        messageDiv.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
